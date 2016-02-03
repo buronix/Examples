@@ -306,7 +306,7 @@ namespace FNetwork.Server
 
                 if (targetDistance > endReachedDistance)
                 {
-                    if(relativeDistance > (targetDistance - endReachedDistance))
+                    if( (targetDistance - endReachedDistance) < relativeDistance)
                     {
                         relativeDistance = targetDistance - endReachedDistance;
                     }
